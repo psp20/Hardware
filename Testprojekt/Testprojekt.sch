@@ -1,4 +1,127 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D3
+U 1 1 5FA8E9F3
+P 3150 2500
+F 0 "D3" H 3143 2717 50  0000 C CNN
+F 1 "LED" H 3143 2626 50  0000 C CNN
+F 2 "LED_THT:LED_D10.0mm" H 3150 2500 50  0001 C CNN
+F 3 "~" H 3150 2500 50  0001 C CNN
+	1    3150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FA92F79
+P 3150 3000
+F 0 "D2" H 3143 3217 50  0000 C CNN
+F 1 "LED" H 3143 3126 50  0000 C CNN
+F 2 "LED_THT:LED_D10.0mm" H 3150 3000 50  0001 C CNN
+F 3 "~" H 3150 3000 50  0001 C CNN
+	1    3150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FA93F7B
+P 3150 3500
+F 0 "D1" H 3143 3717 50  0000 C CNN
+F 1 "LED" H 3143 3626 50  0000 C CNN
+F 2 "LED_THT:LED_D10.0mm" H 3150 3500 50  0001 C CNN
+F 3 "~" H 3150 3500 50  0001 C CNN
+	1    3150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FA944FB
+P 3450 2500
+F 0 "R3" V 3243 2500 50  0000 C CNN
+F 1 "200" V 3334 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3380 2500 50  0001 C CNN
+F 3 "~" H 3450 2500 50  0001 C CNN
+	1    3450 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FA95C14
+P 3450 3000
+F 0 "R2" V 3243 3000 50  0000 C CNN
+F 1 "200" V 3334 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3380 3000 50  0001 C CNN
+F 3 "~" H 3450 3000 50  0001 C CNN
+	1    3450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FA95E9F
+P 3450 3500
+F 0 "R1" V 3243 3500 50  0000 C CNN
+F 1 "200" V 3334 3500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3380 3500 50  0001 C CNN
+F 3 "~" H 3450 3500 50  0001 C CNN
+	1    3450 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 5FA96C5D
+P 5000 2950
+F 0 "BT1" H 5108 2996 50  0000 L CNN
+F 1 "Battery" H 5108 2905 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Bulgin_BX0036_1xC" V 5000 3010 50  0001 C CNN
+F 3 "~" V 5000 3010 50  0001 C CNN
+	1    5000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3150 5000 4000
+Wire Wire Line
+	5000 4000 2500 4000
+Wire Wire Line
+	2500 4000 2500 3500
+Wire Wire Line
+	2500 3500 3000 3500
+Wire Wire Line
+	2500 3500 2500 3000
+Wire Wire Line
+	2500 3000 3000 3000
+Connection ~ 2500 3500
+Wire Wire Line
+	2500 3000 2500 2500
+Wire Wire Line
+	2500 2500 3000 2500
+Connection ~ 2500 3000
+Wire Wire Line
+	5000 2750 5000 2500
+Wire Wire Line
+	5000 2500 4000 2500
+Wire Wire Line
+	4000 2500 4000 3000
+Wire Wire Line
+	4000 3000 3600 3000
+Connection ~ 4000 2500
+Wire Wire Line
+	4000 2500 3600 2500
+Wire Wire Line
+	4000 3000 4000 3500
+Wire Wire Line
+	4000 3500 3600 3500
+Connection ~ 4000 3000
 $EndSCHEMATC
