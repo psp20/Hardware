@@ -293,8 +293,8 @@ U 1 1 5FB3E2DF
 P 6200 1100
 F 0 "C3" H 6318 1146 50  0000 L CNN
 F 1 "470u" H 6318 1055 50  0000 L CNN
-F 2 "" H 6238 950 50  0001 C CNN
-F 3 "~" H 6200 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 6238 950 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/SMD_FT_ENG_TDS.pdf" H 6200 1100 50  0001 C CNN
 	1    6200 1100
 	1    0    0    -1  
 $EndComp
@@ -392,8 +392,8 @@ U 1 1 5FB4F73A
 P 8800 1100
 F 0 "C5" H 8918 1146 50  0000 L CNN
 F 1 "470u" H 8918 1055 50  0000 L CNN
-F 2 "" H 8838 950 50  0001 C CNN
-F 3 "~" H 8800 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 8838 950 50  0001 C CNN
+F 3 "reichelt.de/documents/datenblatt/B300/SMD_FT_ENG_TDS.pdf" H 8800 1100 50  0001 C CNN
 	1    8800 1100
 	1    0    0    -1  
 $EndComp
