@@ -304,8 +304,8 @@ U 1 1 5FB431A5
 P 6500 1100
 F 0 "C4" H 6615 1146 50  0000 L CNN
 F 1 "0,1u" H 6615 1055 50  0000 L CNN
-F 2 "" H 6538 950 50  0001 C CNN
-F 3 "~" H 6500 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6538 950 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_C0G_DB-EN.pdf" H 6500 1100 50  0001 C CNN
 	1    6500 1100
 	1    0    0    -1  
 $EndComp
@@ -340,8 +340,8 @@ U 1 1 5FB4650F
 P 8400 950
 F 0 "L1" V 8590 950 50  0000 C CNN
 F 1 "33u" V 8499 950 50  0000 C CNN
-F 2 "" H 8400 950 50  0001 C CNN
-F 3 "~" H 8400 950 50  0001 C CNN
+F 2 "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder" H 8400 950 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/1008F.pdf" H 8400 950 50  0001 C CNN
 	1    8400 950 
 	0    -1   -1   0   
 $EndComp
@@ -403,8 +403,8 @@ U 1 1 5FB4F740
 P 9100 1100
 F 0 "C6" H 9215 1146 50  0000 L CNN
 F 1 "0,1u" H 9215 1055 50  0000 L CNN
-F 2 "" H 9138 950 50  0001 C CNN
-F 3 "~" H 9100 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9138 950 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_C0G_DB-EN.pdf" H 9100 1100 50  0001 C CNN
 	1    9100 1100
 	1    0    0    -1  
 $EndComp
@@ -451,17 +451,6 @@ F 3 "" H 9600 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D_Zener D1
-U 1 1 5FB55D4C
-P 8200 1250
-F 0 "D1" V 8154 1330 50  0000 L CNN
-F 1 "B340A" V 8245 1330 50  0000 L CNN
-F 2 "" H 8200 1250 50  0001 C CNN
-F 3 "~" H 8200 1250 50  0001 C CNN
-	1    8200 1250
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FB57356
 P 8200 1400
@@ -487,4 +476,15 @@ Wire Notes Line
 	9750 1650 5450 1650
 Wire Notes Line
 	5450 650  5450 1650
+$Comp
+L Device:D_Schottky D1
+U 1 1 5FB4F340
+P 8200 1250
+F 0 "D1" V 8154 1330 50  0000 L CNN
+F 1 "B340A" V 8245 1330 50  0000 L CNN
+F 2 "" H 8200 1250 50  0001 C CNN
+F 3 "~" H 8200 1250 50  0001 C CNN
+	1    8200 1250
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
