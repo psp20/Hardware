@@ -1,0 +1,291 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GL2576-12TB5T
+D 12V 3A, 52KHz Step Down Converter, TO220-5
+K 12V 3A 52KHz Buck DC/DC
+F http://www.dianyuan.com/bbs/u/54/437861181916300.pdf
+$ENDCMP
+#
+$CMP GL2576-15TB5T
+D 15V 3A, 52KHz Step Down Converter, TO220-5
+K 15V 3A 52KHz Buck DC/DC
+F http://www.dianyuan.com/bbs/u/54/437861181916300.pdf
+$ENDCMP
+#
+$CMP GL2576-3.3TB5T
+D 3.3V 3A, 52KHz Step Down Converter, TO220-5
+K 3.3V 3A 52KHz Buck DC/DC
+F http://www.dianyuan.com/bbs/u/54/437861181916300.pdf
+$ENDCMP
+#
+$CMP GL2576-5.0TB5T
+D 5V 3A, 52KHz Step Down Converter, TO220-5
+K 5V 3A 52KHz Buck DC/DC
+F http://www.dianyuan.com/bbs/u/54/437861181916300.pdf
+$ENDCMP
+#
+$CMP GL2576-ATB5T
+D Adjustable 3A, 52KHz Step Down Converter, TO220-5
+K Adjustable 3A 52KHz Buck DC/DC
+F http://www.dianyuan.com/bbs/u/54/437861181916300.pdf
+$ENDCMP
+#
+$CMP IRLML0030TRPbF
+D 30V Vds, 5.3A Id, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df
+$ENDCMP
+#
+$CMP LF120_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 12.0V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF15_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 1.5V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF18_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 1.8V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF25_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 2.5V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF33_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 3.3V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF47_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 4.7V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF50_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 5.0V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF60_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 6.0V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF80_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 8.0V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF85_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 8.5V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LF90_TO220
+D Low-drop Voltage Regulator, Io up to 500mA, Fixed Vo 9.0V, TO-220
+K LDO regulator voltage
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf
+$ENDCMP
+#
+$CMP LM2575-12BT
+D Fixed 12V 52kHz Simple 1A Buck Regulator, TO-220-5
+K Buck regulator Switcher
+F http://ww1.microchip.com/downloads/en/DeviceDoc/lm2575.pdf
+$ENDCMP
+#
+$CMP LM2575-3.3BT
+D Fixed 3.3V 52kHz Simple 1A Buck Regulator, TO-220-5
+K Buck regulator Switcher
+F http://ww1.microchip.com/downloads/en/DeviceDoc/lm2575.pdf
+$ENDCMP
+#
+$CMP LM2575-5.0BT
+D Fixed 5.0V 52kHz Simple 1A Buck Regulator, TO-220-5
+K Buck regulator Switcher
+F http://ww1.microchip.com/downloads/en/DeviceDoc/lm2575.pdf
+$ENDCMP
+#
+$CMP LM2575BT-ADJ
+D Adjustable 52kHz Simple 1A Buck Regulator, TO-220-5
+K Buck regulator Switcher
+F http://ww1.microchip.com/downloads/en/DeviceDoc/lm2575.pdf
+$ENDCMP
+#
+$CMP LM2576HVT-15
+D 15V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-220-5
+K Step-Down Voltage Regulator 15V 3A High Voltage
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2576HVT-3.3
+D 3.3V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-220-5
+K Step-Down Voltage Regulator 3.3V 3A High Voltage
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2576HVT-5
+D 5V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-220-5
+K Step-Down Voltage Regulator 5V 3A High Voltage
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2576HVT-ADJ
+D Adjustable Output Voltage, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-220-5
+K Step-Down Voltage Regulator 3A Adjustable High Voltage
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2576T-12
+D 12V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, TO-220-5
+K Step-Down Voltage Regulator 12V 3A
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2576T-15
+D 15V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, TO-220-5
+K Step-Down Voltage Regulator 15V 3A
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2576T-3.3
+D 3.3V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, TO-220-5
+K Step-Down Voltage Regulator 3.3V 3A
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2576T-5
+D 5V, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, TO-220-5
+K Step-Down Voltage Regulator 5V 3A
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2576T-ADJ
+D Adjustable Output Voltage, 3A SIMPLE SWITCHER® Step-Down Voltage Regulator, TO-220-5
+K Step-Down Voltage Regulator 3A Adjustable
+F http://www.ti.com/lit/ds/symlink/lm2576.pdf
+$ENDCMP
+#
+$CMP LM2937xT
+D 500-mA Low Dropout Regulator, TO-220
+K Voltage Regulator Low Dropuout Positive LDO
+F http://www.ti.com/lit/ds/symlink/lm2937.pdf
+$ENDCMP
+#
+$CMP LM341T-05_TO220
+D Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-220
+K Voltage Regulator 500mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78M05.pdf
+$ENDCMP
+#
+$CMP LM341T-12_TO220
+D Positive 500mA 35V Linear Regulator, Fixed Output 12V, TO-220
+K Voltage Regulator 500mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78M05.pdf
+$ENDCMP
+#
+$CMP LM341T-15_TO220
+D Positive 500mA 35V Linear Regulator, Fixed Output 15V, TO-220
+K Voltage Regulator 500mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78M05.pdf
+$ENDCMP
+#
+$CMP LM7806_TO220
+D Positive 1A 35V Linear Regulator, Fixed Output 6V, TO-220
+K Voltage Regulator 1A Positive
+F http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP LM7808_TO220
+D Positive 1A 35V Linear Regulator, Fixed Output 8V, TO-220
+K Voltage Regulator 1A Positive
+F http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP LM7809_TO220
+D Positive 1A 35V Linear Regulator, Fixed Output 9V, TO-220
+K Voltage Regulator 1A Positive
+F http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP LM7810_TO220
+D Positive 1A 35V Linear Regulator, Fixed Output 10V, TO-220
+K Voltage Regulator 1A Positive
+F http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP LM7812_TO220
+D Positive 1A 35V Linear Regulator, Fixed Output 12V, TO-220
+K Voltage Regulator 1A Positive
+F http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP LM7815_TO220
+D Positive 1A 35V Linear Regulator, Fixed Output 15V, TO-220
+K Voltage Regulator 1A Positive
+F http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP LM7818_TO220
+D Positive 1A 35V Linear Regulator, Fixed Output 18V, TO-220
+K Voltage Regulator 1A Positive
+F http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP LM7824_TO220
+D Positive 1A 35V Linear Regulator, Fixed Output 24V, TO-220
+K Voltage Regulator 1A Positive
+F http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP LM78M05_TO220
+D Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-220
+K Voltage Regulator 500mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78M05.pdf
+$ENDCMP
+#
+$CMP Meter_DC
+D DC voltmeter
+K voltmeter DC
+F ~
+$ENDCMP
+#
+$CMP SPX2920U-3.3_TO220
+D 400mA Low drop-out regulator, Fixed Output 3.3V, TO-220
+K REGULATOR LDO 3.3V
+F http://www.zlgmcu.com/Sipex/LDO/PDF/spx2920.pdf
+$ENDCMP
+#
+$CMP SPX2920U-5.0_TO220
+D 400mA Low drop-out regulator, Fixed Output 5V, TO-220
+K REGULATOR LDO 5V
+F http://www.zlgmcu.com/Sipex/LDO/PDF/spx2920.pdf
+$ENDCMP
+#
+$CMP TS2596S
+D 24V, 2A Step-Down Voltage Regulator, High Voltage Input, SO8
+K Step-Down Voltage Regulator 24V 2A High Voltage
+F https://cdn-reichelt.de/documents/datenblatt/A200/TS2596SCS50.pdf
+$ENDCMP
+#
+$CMP ZLDO1117_SOT223
+D Positive 1A 12V Linear Regulator, Fixed Output 3.3V, SOT223-3
+K Voltage Regulator 1A Positive
+F https://cdn-reichelt.de/documents/datenblatt/A100/ZETEX_1117_ENG_TDS.pdf
+$ENDCMP
+#
+#End Doc Library
