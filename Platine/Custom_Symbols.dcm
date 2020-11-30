@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BCX19
+D 0.5A Ic, 40V Vce, NPN Low Power Transistor, SOT-23
+K NPN Transistor
+F http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1
+$ENDCMP
+#
 $CMP GL2576-12TB5T
 D 12V 3A, 52KHz Step Down Converter, TO220-5
 K 12V 3A 52KHz Buck DC/DC
