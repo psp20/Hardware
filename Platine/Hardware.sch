@@ -204,7 +204,7 @@ U 1 1 5FB4650F
 P 14650 9200
 F 0 "L1" V 14840 9200 50  0000 C CNN
 F 1 "33u" V 14749 9200 50  0000 C CNN
-F 2 "Custom_Footprints:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder" H 14650 9200 50  0001 C CNN
+F 2 "Inductor_SMD:L_10.4x10.4_H4.8" H 14650 9200 50  0001 C CNN
 F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/1008F.pdf" H 14650 9200 50  0001 C CNN
 	1    14650 9200
 	0    -1   -1   0   
