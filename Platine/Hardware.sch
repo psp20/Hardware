@@ -4239,7 +4239,7 @@ P 11200 9050
 F 0 "J2" H 11118 8725 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 11118 8816 50  0000 C CNN
 F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 11200 9050 50  0001 C CNN
-F 3 "~" H 11200 9050 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/C100/AKL057%23RIA.pdf" H 11200 9050 50  0001 C CNN
 	1    11200 9050
 	0    -1   -1   0   
 $EndComp
