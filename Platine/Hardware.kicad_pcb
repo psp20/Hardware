@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.4)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -878,6 +878,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Connector_BarrelJack.3dshapes/BarrelJack_CUI_PJ-063AH_Horizontal.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Inductor_SMD:L_10.4x10.4_H4.8 (layer F.Cu) (tedit 5990349B) (tstamp 5FC040AF)
@@ -920,6 +925,11 @@
     (model ${KISYS3DMOD}/Inductor_SMD.3dshapes/L_10.4x10.4_H4.8.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Inductor_SMD.3dshapes/L_Bourns_SRN6045TA.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1.7 1.7 1.7))
       (rotate (xyz 0 0 0))
     )
   )
@@ -2084,6 +2094,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1.4 1.95 1.7))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Custom_Footprints:SW_1612.11 (layer F.Cu) (tedit 5FBF8114) (tstamp 5FC043E4)
@@ -2114,6 +2129,11 @@
     (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_MEC_5GSH9.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_PTS645.step
+      (offset (xyz 0 -0.3 0))
+      (scale (xyz 1.6 1.6 1.6))
       (rotate (xyz 0 0 0))
     )
   )
@@ -2148,6 +2168,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_PTS645.step
+      (offset (xyz 0 -0.3 0))
+      (scale (xyz 1.6 1.6 1.6))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Custom_Footprints:SW_1612.11 (layer F.Cu) (tedit 5FBF8114) (tstamp 5FC043CA)
@@ -2178,6 +2203,11 @@
     (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_MEC_5GSH9.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_PTS645.step
+      (offset (xyz 0 -0.3 0))
+      (scale (xyz 1.6 1.6 1.6))
       (rotate (xyz 0 0 0))
     )
   )
@@ -3671,6 +3701,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/3D Models/usb_a-usb_b_smt-r.stp"
+      (offset (xyz 15 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 180 90))
+    )
   )
 
   (module TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal (layer F.Cu) (tedit 5B294F8C) (tstamp 5FC04081)
@@ -3731,6 +3766,11 @@
     (model ${KISYS3DMOD}/TerminalBlock_RND.3dshapes/TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/3D Models/gmkds_3-2-7,62.wrl"
+      (offset (xyz 2.5 0 0))
+      (scale (xyz 0.7 0.7 0.7))
       (rotate (xyz 0 0 0))
     )
   )
