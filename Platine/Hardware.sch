@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Hardware-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -7,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Vier-Gewinnt PSP20"
 Date "2020-11-19"
-Rev "V1.0"
+Rev "V1.1"
 Comp "Siemens Mobility GmbH"
 Comment1 "Linda Heinrich"
 Comment2 "Mathis Lehmann"
