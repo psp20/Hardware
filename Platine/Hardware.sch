@@ -4034,10 +4034,6 @@ F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 14200 7050 50  0001 C C
 	1    14200 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12950 6650 13400 6650
-Wire Wire Line
-	12950 6750 13400 6750
 Text GLabel 15000 6450 2    50   Input ~ 0
 TX0
 Text GLabel 15000 6350 2    50   Input ~ 0
@@ -4303,8 +4299,6 @@ Text GLabel 9900 5350 0    50   Input ~ 0
 ESP_ENA
 Text GLabel 12950 6450 2    50   Input ~ 0
 V_USB
-Text GLabel 14450 6000 2    50   Input ~ 0
-V_FT232
 Wire Wire Line
 	14300 6000 14300 6050
 Text GLabel 12850 7600 1    50   Input ~ 0
@@ -4514,7 +4508,7 @@ U 1 1 5FEB4661
 P 11250 10750
 F 0 "D47" V 11289 10632 50  0000 R CNN
 F 1 "LED" V 11198 10632 50  0000 R CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11250 10750 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11250 10750 50  0001 C CNN
 F 3 "https://cdn-reichelt.de/documents/datenblatt/A500/17_21SYGC_S530_E2_TR8_ENG_DATASHEET.pdf" H 11250 10750 50  0001 C CNN
 	1    11250 10750
 	0    -1   -1   0   
@@ -5073,8 +5067,155 @@ F 3 "" H 9450 10600 50  0001 C CNN
 	1    9450 10600
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 14150 4950
+NoConn ~ 14250 4950
+Text GLabel 11450 9750 2    50   Input ~ 0
+V_IN
 Wire Wire Line
-	15050 9200 15050 9100
-Text GLabel 15050 9100 1    50   Input ~ 0
+	11450 9750 11200 9750
+Wire Wire Line
+	11200 9750 11200 9600
+Connection ~ 11200 9600
+Text GLabel 13350 3950 0    50   Input ~ 0
+V_IN
+$Comp
+L Device:R R50
+U 1 1 6007B0D4
+P 13500 4350
+F 0 "R50" H 13570 4396 50  0000 L CNN
+F 1 "10k" H 13570 4305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13430 4350 50  0001 C CNN
+F 3 "~" H 13500 4350 50  0001 C CNN
+	1    13500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R51
+U 1 1 6007C91D
+P 13500 4750
+F 0 "R51" H 13570 4796 50  0000 L CNN
+F 1 "10k" H 13570 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13430 4750 50  0001 C CNN
+F 3 "~" H 13500 4750 50  0001 C CNN
+	1    13500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6007E1F7
+P 13500 5250
+F 0 "#PWR?" H 13500 5000 50  0001 C CNN
+F 1 "GND" H 13505 5077 50  0000 C CNN
+F 2 "" H 13500 5250 50  0001 C CNN
+F 3 "" H 13500 5250 50  0001 C CNN
+	1    13500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OP07 U5
+U 1 1 5FDF6D96
+P 14150 4650
+F 0 "U5" H 14494 4696 50  0000 L CNN
+F 1 "OP07" H 14494 4605 50  0000 L CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 14200 4700 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 14200 4800 50  0001 C CNN
+	1    14150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 4950 14050 5150
+Wire Wire Line
+	14050 5150 13500 5150
+Connection ~ 13500 5150
+Wire Wire Line
+	13500 5150 13500 5250
+Wire Wire Line
+	13500 4200 13500 3950
+Wire Wire Line
+	13500 3950 13350 3950
+Wire Wire Line
+	13500 4500 13500 4550
+Wire Wire Line
+	13850 4550 13500 4550
+Connection ~ 13500 4550
+Wire Wire Line
+	13500 4550 13500 4600
+Wire Wire Line
+	13500 4900 13500 5150
+$Comp
+L power:VCCQ #PWR?
+U 1 1 606D521E
+P 13800 4850
+F 0 "#PWR?" H 13800 4700 50  0001 C CNN
+F 1 "VCCQ" H 13818 5023 50  0000 C CNN
+F 2 "" H 13800 4850 50  0001 C CNN
+F 3 "" H 13800 4850 50  0001 C CNN
+	1    13800 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13800 4850 13800 4750
+Wire Wire Line
+	13800 4750 13850 4750
+$Comp
+L power:VCC #PWR?
+U 1 1 60745DA1
+P 14050 4350
+F 0 "#PWR?" H 14050 4200 50  0001 C CNN
+F 1 "VCC" H 14067 4523 50  0000 C CNN
+F 2 "" H 14050 4350 50  0001 C CNN
+F 3 "" H 14050 4350 50  0001 C CNN
+	1    14050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:VP0610T Q3
+U 1 1 609171B8
+P 14900 4650
+F 0 "Q3" H 15104 4696 50  0000 L CNN
+F 1 "NDS0610" H 15104 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 15100 4575 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 14900 4650 50  0001 L CNN
+	1    14900 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14700 4650 14450 4650
+Wire Wire Line
+	12950 6750 13400 6750
+Wire Wire Line
+	12950 6650 13400 6650
+Text GLabel 14950 4300 0    50   Input ~ 0
 V_USB
+Wire Wire Line
+	14950 4300 15000 4300
+Wire Wire Line
+	15000 4300 15000 4450
+Wire Wire Line
+	15000 4850 15000 4950
+Wire Wire Line
+	15000 4950 14950 4950
+$Comp
+L power:VCC #PWR?
+U 1 1 60C2B3F3
+P 14950 4950
+F 0 "#PWR?" H 14950 4800 50  0001 C CNN
+F 1 "VCC" V 14968 5077 50  0000 L CNN
+F 2 "" H 14950 4950 50  0001 C CNN
+F 3 "" H 14950 4950 50  0001 C CNN
+	1    14950 4950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 14450 6000 2    50   Input ~ 0
+V_FT232
+Wire Notes Line
+	12400 5500 16000 5500
+Wire Notes Line
+	16000 5500 16000 3450
+Wire Notes Line
+	16000 3450 12400 3450
+Wire Notes Line
+	12400 3450 12400 5500
+Text Notes 13500 3700 0    100  ~ 0
+USB power protection
 $EndSCHEMATC
