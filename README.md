@@ -10,5 +10,5 @@ Vier Gewinnt Hardware Repository
 * [x] Footprints auswählen
 * [x] Trace-routing fertigstellen
 ## Produktion
-* [ ] Produktionsmöglichkeiten klären
+* [x] Produktionsmöglichkeiten klären
 * [ ] Prototyp bestellen
