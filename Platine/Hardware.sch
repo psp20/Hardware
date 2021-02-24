@@ -184,12 +184,12 @@ $EndComp
 $Comp
 L Device:L L1
 U 1 1 5FB4650F
-P 14650 9200
-F 0 "L1" V 14840 9200 50  0000 C CNN
-F 1 "33u" V 14749 9200 50  0000 C CNN
-F 2 "Inductor_SMD:L_10.4x10.4_H4.8" H 14650 9200 50  0001 C CNN
-F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/PIHV4119.pdf" H 14650 9200 50  0001 C CNN
-	1    14650 9200
+P 14650 9300
+F 0 "L1" V 14840 9300 50  0000 C TNN
+F 1 "33u" V 14749 9300 50  0000 C TNN
+F 2 "Inductor_SMD:L_10.4x10.4_H4.8" H 14650 9300 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/PIHV4119.pdf" H 14650 9300 50  0001 C CNN
+	1    14650 9300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -225,38 +225,29 @@ F 3 "" H 13650 9650 50  0001 C CNN
 $EndComp
 Connection ~ 13650 9650
 Wire Wire Line
-	14250 9200 14350 9200
-Wire Wire Line
 	14250 9400 14350 9400
-Wire Wire Line
-	14350 9400 14350 9200
-Connection ~ 14350 9200
-Wire Wire Line
-	14350 9200 14450 9200
 $Comp
 L Device:CP C5
 U 1 1 5FB4F73A
-P 15050 9350
-F 0 "C5" H 15168 9396 50  0000 L CNN
-F 1 "470u" H 15168 9305 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 15088 9200 50  0001 C CNN
-F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/ABA0000C34.pdf" H 15050 9350 50  0001 C CNN
-	1    15050 9350
+P 15050 9450
+F 0 "C5" H 15168 9496 50  0000 L CNN
+F 1 "470u" H 15168 9405 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 15088 9300 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/ABA0000C34.pdf" H 15050 9450 50  0001 C CNN
+	1    15050 9450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C6
 U 1 1 5FB4F740
-P 15450 9350
-F 0 "C6" H 15565 9396 50  0000 L CNN
-F 1 "0,1u" H 15565 9305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15488 9200 50  0001 C CNN
-F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_C0G_DB-EN.pdf" H 15450 9350 50  0001 C CNN
-	1    15450 9350
+P 15450 9450
+F 0 "C6" H 15565 9496 50  0000 L CNN
+F 1 "0,1u" H 15565 9405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15488 9300 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_C0G_DB-EN.pdf" H 15450 9450 50  0001 C CNN
+	1    15450 9450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	15050 9500 15050 9600
 $Comp
 L power:GND #PWR0110
 U 1 1 5FB51B45
@@ -279,11 +270,6 @@ F 3 "" H 14450 9650 50  0001 C CNN
 	1    14450 9650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14450 9350 14450 9200
-Connection ~ 14450 9200
-Wire Wire Line
-	14450 9200 14500 9200
 $Comp
 L Device:D_Schottky D1
 U 1 1 5FB4F340
@@ -3789,14 +3775,11 @@ Wire Wire Line
 Connection ~ 12750 9600
 Wire Wire Line
 	12750 9600 12750 9650
-Connection ~ 15450 9200
+Connection ~ 15450 9300
 Wire Wire Line
-	15050 9200 15450 9200
-Wire Wire Line
-	15450 9500 15450 9600
+	15050 9300 15450 9300
 Wire Wire Line
 	15050 9600 15450 9600
-Connection ~ 15450 9600
 Wire Wire Line
 	15450 9600 15450 9650
 $Comp
@@ -4446,16 +4429,16 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP2
 U 1 1 605C9295
-P 15450 9100
-F 0 "TP2" H 15508 9218 50  0000 L CNN
-F 1 "TestPoint 5V" H 15508 9127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 15650 9100 50  0001 C CNN
-F 3 "~" H 15650 9100 50  0001 C CNN
-	1    15450 9100
+P 15450 9200
+F 0 "TP2" H 15508 9318 50  0000 L CNN
+F 1 "TestPoint 5V" H 15508 9227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 15650 9200 50  0001 C CNN
+F 3 "~" H 15650 9200 50  0001 C CNN
+	1    15450 9200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15450 9100 15450 9200
+	15450 9200 15450 9300
 $Comp
 L Connector:TestPoint TP3
 U 1 1 606335C1
@@ -4581,19 +4564,19 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR0105
 U 1 1 6324EB30
-P 15650 9200
-F 0 "#PWR0105" H 15650 9050 50  0001 C CNN
-F 1 "VCC" H 15668 9373 50  0000 C CNN
-F 2 "" H 15650 9200 50  0001 C CNN
-F 3 "" H 15650 9200 50  0001 C CNN
-	1    15650 9200
+P 15650 9300
+F 0 "#PWR0105" H 15650 9150 50  0001 C CNN
+F 1 "VCC" H 15668 9473 50  0000 C CNN
+F 2 "" H 15650 9300 50  0001 C CNN
+F 3 "" H 15650 9300 50  0001 C CNN
+	1    15650 9300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	15650 9200 15450 9200
+	15650 9300 15450 9300
 Wire Wire Line
-	14800 9200 15050 9200
-Connection ~ 15050 9200
+	14800 9300 15050 9300
+Connection ~ 15050 9300
 $Comp
 L power:VCC #PWR0111
 U 1 1 63616BE8
@@ -5218,4 +5201,18 @@ F 3 "https://cdn-reichelt.de/documents/datenblatt/A200/ZETEX_DMP3098L_ENG_TDS.pd
 	1    14900 4650
 	1    0    0    -1  
 $EndComp
+Connection ~ 15450 9600
+Wire Wire Line
+	14350 9400 14350 9300
+Wire Wire Line
+	14350 9300 14450 9300
+Wire Wire Line
+	14450 9350 14450 9300
+Connection ~ 14450 9300
+Wire Wire Line
+	14450 9300 14500 9300
+Wire Wire Line
+	14250 9200 15050 9200
+Wire Wire Line
+	15050 9200 15050 9300
 $EndSCHEMATC
