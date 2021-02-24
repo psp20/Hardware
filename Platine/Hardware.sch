@@ -4034,9 +4034,9 @@ F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 14200 7050 50  0001 C C
 	1    14200 7050
 	1    0    0    -1  
 $EndComp
-Text GLabel 15000 6450 2    50   Input ~ 0
-TX0
 Text GLabel 15000 6350 2    50   Input ~ 0
+TX0
+Text GLabel 15000 6450 2    50   Input ~ 0
 RX0
 Text GLabel 11100 5650 2    50   Input ~ 0
 TX0
