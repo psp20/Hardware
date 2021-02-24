@@ -6,6 +6,12 @@ K NPN Transistor
 F http://cache.nxp.com/documents/data_sheet/BCP56_BCX56_BC56PA.pdf?pspll=1
 $ENDCMP
 #
+$CMP DMP3098L7
+D -3.8A Id, -30V Vds, P-Channel MOSFET, 56mOhm Ron, 4nC Qg (typ)
+K P-Channel MOSFET
+F https://cdn-reichelt.de/documents/datenblatt/A200/ZETEX_DMP3098L_ENG_TDS.pdf
+$ENDCMP
+#
 $CMP GL2576-12TB5T
 D 12V 3A, 52KHz Step Down Converter, TO220-5
 K 12V 3A 52KHz Buck DC/DC
