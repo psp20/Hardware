@@ -150,8 +150,8 @@ U 1 1 5FB3E2DF
 P 12350 9350
 F 0 "C3" H 12468 9396 50  0000 L CNN
 F 1 "470u" H 12468 9305 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 12388 9200 50  0001 C CNN
-F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/ABA0000C34.pdf" H 12350 9350 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 12388 9200 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/MZS.pdf" H 12350 9350 50  0001 C CNN
 	1    12350 9350
 	1    0    0    -1  
 $EndComp
