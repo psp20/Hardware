@@ -1,0 +1,887 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 4cm
+\bottommargin 4cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+title{Anleitung Aufbau und Inbetriebnahme des digitalen Viergewinnt der
+ StiP19 uns dem Projekt PSP20}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+author{Mathis Lehmann
+\backslash
+
+\backslash
+ mathis.lehmann@siemens.com}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Einleitung
+\end_layout
+
+\begin_layout Subsection
+Präambel
+\end_layout
+
+\begin_layout Standard
+Dies ist die Dokumentation um ein digitales Viergewinnt aufzubauen und in
+ Betrieb zu nehmen.
+ Dieses Projekt wurde von den Dualen Studenten des Jahrganges 2019 bei der
+ Siemens Mobility GmbH im Rahmen des Praxissemesters durchgeführt.
+ Ziel dieses Dokuments ist es mit den Bauteilen eine Platine zu bestücken,
+ die Software zu flashen und mithilfe der zugehörigen Smartphone Apps zu
+ testen.
+\end_layout
+
+\begin_layout Subsection
+Vorbereitungen zum Aufbau der Platine
+\end_layout
+
+\begin_layout Subsubsection
+Arbeitsplatze
+\end_layout
+
+\begin_layout Standard
+Um die Platine aufbauen zu können sollte ein Arbeitsplatz mit folgendener
+ Ausstattung zur Verfügung stehen:
+\end_layout
+
+\begin_layout Enumerate
+ESD Schutzeinrichtung
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ESD Matte
+\end_layout
+
+\begin_layout Enumerate
+ESD Armband
+\end_layout
+
+\begin_layout Enumerate
+Zentraler Erdungspunkt
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Löt Werkzeug
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Regulierter Lötkolben mit dünner Spitze
+\end_layout
+
+\begin_layout Enumerate
+Dünnes Lot
+\end_layout
+
+\begin_layout Enumerate
+Reinigungsmöglichkeit für Lötkolben
+\end_layout
+
+\begin_layout Enumerate
+Entlötlitze
+\end_layout
+
+\begin_layout Enumerate
+Optional Flux
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Weiteres
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Pinzette (bevorzugt gebogen)
+\end_layout
+
+\begin_layout Enumerate
+Lupe
+\end_layout
+
+\begin_layout Enumerate
+Gute Beleuchtung
+\end_layout
+
+\begin_layout Enumerate
+Labornetzteil
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Bauteile
+\end_layout
+
+\begin_layout Standard
+Zum Anfang sollte sichergegangen werden das alle Bauteile vorhanden sind.
+ Dabei unbedingt die Bauteile sortiert halten.
+ Es sollte darauf geachtet werden das besonders SMD Kondensatoren schnell
+ verwechselt werden können und diese nurnoch durch messen voneinander unterschie
+den werden können.
+\end_layout
+
+\begin_layout Standard
+Eine vollständige Bauteilliste sollten Sie mit diesem Dokument erhalten
+ haben.
+\end_layout
+
+\begin_layout Subsubsection
+Fertigkeiten
+\end_layout
+
+\begin_layout Standard
+Diese Platine benutzt fast ausschließlich SMD Bauteile.
+ Die meisten in der Bauform 0805, welche einfach zu löten ist, wenn man
+ in der Vergangenheit ein paar mal gelötet hat.
+ Falls dies nicht der Fall sein sollte empfiehlt es sich vorher ein paar
+ Lötübungen durchzuführen.
+\end_layout
+
+\begin_layout Section
+Aufbau
+\end_layout
+
+\begin_layout Subsection
+LED Panel
+\end_layout
+
+\begin_layout Standard
+Zum Anfang wird das LED Panel aufgebaut um in das SMD löten reinzukommen.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Bilder/LEDs.jpg
+	lyxscale 20
+	scale 8
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Teil des LED Panels
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die LEDs sind beschriftet von D2 bis D43 und werden immer zusammen mit einem
+ 91 Ω Widerstand (R1 bis R42) und einem 100 nF Kondensator (C7 bis C48).
+\end_layout
+
+\begin_layout Standard
+Die LEDs haben ein Gehäuse mit einer ausgestemmten Ecke.
+ Diese muss immer in der gleichen Ecke sein wie die markierte Ecke auf der
+ Platine.
+\end_layout
+
+\begin_layout Standard
+Die Einbaurichtung der Widerstände und der Kondensatoren ist nicht relevant.
+\end_layout
+
+\begin_layout Subsection
+FT232RL
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:FT232RL"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nun kommt der am schwierigsten zu lötende IC.
+ Es handelt sich hierbei um einen FT232RL (U4).
+ Dieser Chip ermöglicht es per USB mit dem Microcontroller zu kommunizieren.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Bilder/IO_Sw_FT232.jpg
+	lyxscale 20
+	scale 8
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+FT232, Taster und USB Buchse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei diesem IC entstehen gerne Lötbrücken zwischen den einzelnen Pins.
+ Hier sollte die Lupe verwendet werden um solche Brücken zu finden und mithilfe
+ der Entlötlitze zu entfernen.
+\end_layout
+
+\begin_layout Standard
+Nachdem der FT232RL aufgelötet und geprüft ist können nun die anderen Bauteile
+ drumherum aufgelötet werden.
+ Hierbei ist nur bei D45 und D46 aufzupassen das die grüne Makierung auf
+ den Bauteilen nach der Markierung auf der Platine auszurichten.
+ Der grüne Strich muss in Richtung des weißen Strichs zeigen.
+\end_layout
+
+\begin_layout Standard
+Die Transistoren Q1 und Q2 können nur in eine Richtung eingebaut werden
+ und bei allen anderen Bauteilen ist die Ausrichtung irrelevant.
+\end_layout
+
+\begin_layout Standard
+Die Schalter SW1 bis SW4 und die USB Buchse J3 sollten noch nicht verbaut
+ werden.
+\end_layout
+
+\begin_layout Subsection
+Netzteil
+\end_layout
+
+\begin_layout Standard
+Nun wird das Netzteil aufgebaut.
+ Diese besitzt 2 Ausgangsspannungen 5 Volt und 3,3 Volt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Bilder/PSU.jpg
+	lyxscale 20
+	scale 8
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Netzteil
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hier ist es ratsam zuerst U2, U3 und U5 aufzulöten und wie bei dem FT232RL
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:FT232RL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) auf Fehler zu prüfen.
+ Nun sollte die Spule L1 und der Kondensator C4 montiert werden, da sonst
+ andere Bauteile die Lötfelder verdecken können.
+ Danach können alle polarisierten Bauteile verbaut werden.
+ Diese sind einerseits die Dioden D1, D44 und D47, welche wieder mit dem
+ Strich auf dem Bauteil zu dem Strich auf der Platine ausgerichtet werden
+ müssen.
+ Weiterhin kann nun Q3 montiert werden und die großen Kondensatoren C3 und
+ C5.
+\end_layout
+
+\begin_layout Standard
+Nun können alle anderen passiven Bauteile aufgebaut werden.
+ Hierbei ist die Orientierung wieder irrelevant.
+\end_layout
+
+\begin_layout Standard
+Die Hohlsteckerbuchse J1 und der Terminalblock J2 sollten erstmal unbestückt
+ bleiben.
+\end_layout
+
+\begin_layout Subsection
+ESP32
+\end_layout
+
+\begin_layout Standard
+Nun kann das Herzstück der Platine aufgelötet werden.
+ Der ESP32 Microcontroller.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Bilder/Sw_ESP_LEDs.jpg
+	lyxscale 20
+	scale 8
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ESP32
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es sollte auf eine genaue Ausrichtung nach den Markierungen geachtet werden
+ bevor dieser fest Verlötet wird.
+\end_layout
+
+\begin_layout Standard
+Jetzt können auch die Schalter SW1 bis SW3 verlötet werden.
+ Nach dem dies geschafft ist sollten alle SMD Komponenten verbaut sein.
+\end_layout
+
+\begin_layout Subsection
+Steckverbinder
+\end_layout
+
+\begin_layout Standard
+Nun können die Komponenten J1, J2, J3 und SW4 nacheinander eingesetzt werden
+ und von der Unterseite der Platine verlötet werden.
+ Hierbei sollte aufgepasst werden das keine Bauteile von der Oberseite abgerisse
+n oder zu stark belastet werden.
+\end_layout
+
+\begin_layout Subsection
+Sichtkontrolle
+\end_layout
+
+\begin_layout Standard
+Es sollte abschließend nochmal eine Sichtkontrolle durchgeführt werden ob
+ alle Lötstellen sauber verlötet sind, es keinen Brücken gibt und ob alle
+ Bauteile in der richtigen Richtung und am richtigen Platz verbaut sind.
+\end_layout
+
+\begin_layout Section
+Inbetriebnahme
+\end_layout
+
+\begin_layout Subsection
+Erster Test
+\end_layout
+
+\begin_layout Standard
+Man schaltet das Labornetzteil ein und stellt es auf eine Spannung von 10
+ V und einen maximalen Strom von 200 mA ein.
+ Nun kann die Terminalbuchse mit dem Labornetzteil verbunden werden.
+ Falls alles korrekt verbaut wurde sollte die Stromaufnahme unter 30 mA
+ liegen.
+ Falls die Strombegrenzung eingreift liegt ein Fehler im Aufbau vor der
+ behoben werden muss.
+ Zum testen können die Testpunkte (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Testpunkte"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) gemessen werden.
+\end_layout
+
+\begin_layout Subsection
+Flashen der Firmware
+\end_layout
+
+\begin_layout Standard
+ToDo Laurin
+\end_layout
+
+\begin_layout Subsection
+Installieren der App
+\end_layout
+
+\begin_layout Standard
+ToDo Philipp
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Zusätzliche Informationen
+\end_layout
+
+\begin_layout Subsection
+Testpunkte
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Testpunkte"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Testpunkte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Testpunkt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spannung
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bedingung
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,3 Volt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 Volt an TP2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 Volt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+USB oder Weitbereichseingang angeschlossen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vin Volt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rundstecker oder Terminalbuchse angeschlossen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 Volt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW4 auf Flash
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,3 Volt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW4 auf Flash
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Spannungsversorgungspriorität
+\end_layout
+
+\begin_layout Standard
+Die Spannungsversorgungseingänge der Platine sind priorisiert und gegenseitig
+ voneinander getrennt.
+ Die Priorität ist wie folgend:
+\end_layout
+
+\begin_layout Enumerate
+Rundsteckerbuchse
+\end_layout
+
+\begin_layout Enumerate
+Terminalblock
+\end_layout
+
+\begin_layout Enumerate
+USB
+\end_layout
+
+\begin_layout Standard
+Sobald ein Rundstecker eingesteckt wird trennt dies den positiven Pol des
+ Terminalblocks und deaktiviert die Versorgung via USB.
+ Die Datenkommuniation per USB bleibt jedoch erhalten.
+\end_layout
+
+\end_body
+\end_document
