@@ -94,7 +94,7 @@ status open
 
 
 \backslash
-title{Risikoanalyse eines Überstrom- oder Überspannungsereignis auf der
+title{Risikoanalyse eines Überstrom- oder Überspannungsereignisses auf der
  Vier-Gewinnt-Platine}
 \end_layout
 
@@ -152,8 +152,8 @@ Abstrakt
 \end_layout
 
 \begin_layout Standard
-Diese Dokument befasst sich mit der Analyse eines Überstrom- oder Überspannungse
-reignis und den Konsequenzen eines solchen Ereignisses.
+Dieses Dokument befasst sich mit der Analyse eines Überstrom- oder Überspannungs
+ereignisses und den Konsequenzen eines solchen Ereignisses.
  Es analysiert die Platine und deren Komponenten, welche die Form eines
  digitalen Vier-Gewinnt einnimmt und im Rahmen des Praxissemsterprojektes
  bei der Siemens 
@@ -161,11 +161,11 @@ reignis und den Konsequenzen eines solchen Ereignisses.
 Mobility
 \lang ngerman
  GmbH von den Dualen Studenten des Jahrgangs 2019 erarbeitet wurden.
- Das hardwareseitige Produkt dieses Praxissemesters wird im folgenden nur
+ Das hardwareseitige Produkt dieses Praxissemesters wird im Folgenden nur
  noch Platine genannt.
  Hierbei werden Konsequenzen einer eventuell auftretenden Überlast auf die
  Platine, die verbauten Komponenten und eventuelle Stromquellen betrachtet.
- Dies soll einen Entscheidung begründen, ob zusätzliche Sicherungsmaßnahmen
+ Dies soll eine Entscheidung begründen, ob zusätzliche Sicherungsmaßnahmen
  auf Seiten der Platine zu empfehlen oder gar nötig sind.
  
 \end_layout
@@ -175,7 +175,7 @@ Vorgehen
 \end_layout
 
 \begin_layout Standard
-Im weiteren Verlauf diese Dokuments werden folgendene Szenarien analysiert:
+Im weiteren Verlauf dieses Dokuments werden folgendene Szenarien analysiert:
 \end_layout
 
 \begin_layout Enumerate
@@ -195,7 +195,7 @@ Spannungszusammenbruch auf Seite der Stromquelle
 \end_layout
 
 \begin_layout Standard
-Diese werden jeweils unter einen der 3 Einspeisungspunkte der Platine analysiert
+Diese werden jeweils unter einem der 3 Einspeisungspunkte der Platine analysiert
 :
 \end_layout
 
@@ -224,16 +224,23 @@ Rundsteckerhohlbuchse
 
 \begin_layout Subsection
 Verpolung
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Verpolung"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Einer Verpolung der Rundsteckerhohlbuchse ist sehr unwahrscheinlich, da
- die Platine die standardisierte Hohlbuchsenbelegung benutzt.
+Eine Verpolung der Rundsteckerhohlbuchse ist sehr unwahrscheinlich, da die
+ Platine die standardisierte Hohlbuchsenbelegung benutzt.
  Diese benutzt den äußeren Mantel als negativen Pol und den geschützten
  Innenpin als positiven Pol.
  Jedoch gibt es Netzteile die dieser Belegung nicht folgen, da sich daraus
  früher diesen Herstellern gewisse Vorteile boten.
- Diese Netzteile sind selten aber dennoch verfügbar und stellen damit ein
+ Diese Netzteile sind selten, aber dennoch verfügbar und stellen damit ein
  Risiko für die Platine dar.
 \end_layout
 
@@ -241,7 +248,7 @@ Einer Verpolung der Rundsteckerhohlbuchse ist sehr unwahrscheinlich, da
 Im Falle einer Verpolung greift eine Schutzeinrichtung der Platine, eine
  Verpolungsdiode.
  Diese schließt die verkehrt gepolte Spannungsquelle kurz.
- Diese Diode ist in der Lage 3 A dauerhaft Kurzzuschließen.
+ Diese Diode ist in der Lage 3 Ampere dauerhaft kurzzuschließen.
  Hieraus ergeben sich folgende Szenarien:
 \end_layout
 
@@ -249,8 +256,8 @@ Im Falle einer Verpolung greift eine Schutzeinrichtung der Platine, eine
 Überlastabschaltung des Netzteils löst aus.
  In diesem Fall schaltet sich das Netzteil zum Selbstschutz aus.
  Eine Beschädigung der Platine ist höchst unwahrscheinlich, da die Diode
- eine maximale Belastung von 80 A für 8,3 ms aushält was ausreichend ist
- um selbst überdimensionierte Netzteile in den Überlastzustand zu bringen.
+ eine maximale Belastung von 80 Ampere für 8,3 ms aushält, was ausreichend
+ ist, um selbst überdimensionierte Netzteile in den Überlastzustand zu bringen.
  Die Diode bleibt davon ungeschädigt und die Platine kann nach beheben der
  Verpolung weitergenutzt werden.
 \end_layout
@@ -266,14 +273,26 @@ nicht
 
 \begin_deeper
 \begin_layout Enumerate
-Netzteil liefert maximal 3 A.
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Netzteil-liefert-maximal"
+
+\end_inset
+
+Netzteil liefert maximal 3 Ampere.
  In diesem Fall wird das Netzteil dauerhaft kurzgeschlossen, bis der Endbenutzer
  den Fehler bemerkt oder eine andere Sicherungseinrichtung greift.
  Die Platine bleibt unbeschädigt.
 \end_layout
 
 \begin_layout Enumerate
-Netzteil liefert mehr als 3 A.
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Netzteil-liefert-mehr"
+
+\end_inset
+
+Netzteil liefert mehr als 3 Ampere.
  In diesem Fall wird das Netzteil dauerhaft kurzgeschlossen, bis der Endbenutzer
  den Fehler bemerkt oder eine andere Sicherungseinrichtung greift.
  Jedoch wurde die Diode dauerhaft überlastet und stellt einen dauerhaften
@@ -283,10 +302,86 @@ Netzteil liefert mehr als 3 A.
 \end_deeper
 \begin_layout Subsection
 Überspannung
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Überspannung"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Test
+Eine Überspannung tritt ab einer Eingangsspannung von 28 Volt auf.
+ Je nach Höhe der Eingangsspannung gibt es hier 2 Fälle:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Eingangsspannung-von-unter"
+
+\end_inset
+
+Eingangsspannung von unter 40 Volt.
+ In diesem Fall wird duch die Spannung der Eingangskondensator beschädigt.
+ Dieser wird nach kurzer Zeit das Elektrolyt entlüften und somit zu einem
+ niederohmigen Widerstand, der nun die Spannungsquelle kurzschließt.
+ Bis dies passiert, liegt am Step-Down Regler die Überspannung an.
+ Dieser geht ab 29 Volt in die Abschaltung.
+ Jedoch wird er ab 35 Volt beschädigt, welches sich bei diesem Bauteil als
+ hochohmiger Fehler äußert.
+\end_layout
+
+\begin_layout Enumerate
+Eingangsspannung von über 40 Volt.
+ In diesem Fall wird die Diode leitend.
+ Und begrenzt die Spannung auf 40 Volt.
+ Die Beschädigungen aus Punkt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Eingangsspannung-von-unter"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ gelten weiterhin.
+\end_layout
+
+\begin_layout Standard
+Ab diesem Punkt gelten die Unterszenarien aus 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Verpolung"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ Unterpunkt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Netzteil-liefert-maximal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ und 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Netzteil-liefert-mehr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, jedoch weiterhin mit den Beschädigungen des jeweiligen Unterpunktes.
 \end_layout
 
 \begin_layout Subsection
@@ -294,7 +389,19 @@ Test
 \end_layout
 
 \begin_layout Standard
-Test
+Ein Überstromereignis kann nur bei bei voheriger Beschädigung der Platine
+ oder bei einer Überspannung auftreten.
+ In diesem Fall greifen nur die Unterszenarien aus 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Überspannung"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -302,7 +409,10 @@ Spannungszusammenbruch
 \end_layout
 
 \begin_layout Standard
-Test
+Sollte die Versorgungsspannung unter 7 Volt zusammenbrechen, schaltet sich
+ der Step-Down Regler ab und aktiviert sich erst nach Erreichen von 7 Volt
+ Eingangsspannung.
+ Die Platine bleibt unbeschädigt.
 \end_layout
 
 \begin_layout Standard
@@ -318,18 +428,153 @@ Terminal-block
 
 \begin_layout Subsection
 Verpolung
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:3.1"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Test
+Im Falle einer Verpolung greift eine Schutzeinrichtung der Platine, eine
+ Verpolungsdiode.
+ Diese schließt die verkehrt gepolte Spannungsquelle kurz.
+ Diese Diode ist in der Lage 3 Ampere dauerhaft kurzzuschließen.
+ Hieraus ergeben sich folgende Szenarien:
 \end_layout
 
+\begin_layout Enumerate
+Überlastabschaltung des Netzteils löst aus.
+ In diesem Fall schaltet sich das Netzteil zum Selbstschutz aus.
+ Eine Beschädigung der Platine ist höchst unwahrscheinlich, da die Diode
+ eine maximale Belastung von 80 Ampere für 8,3 ms aushält, was ausreichend
+ ist, um selbst überdimensionierte Netzteile in den Überlastzustand zu bringen.
+ Die Diode bleibt davon ungeschädigt und die Platine kann nach beheben der
+ Verpolung weitergenutzt werden.
+\end_layout
+
+\begin_layout Enumerate
+Überlastabschaltung des Netzteils löst 
+\series bold
+nicht
+\series default
+ aus.
+ In diesem Fall gibt es 2 Unterszenarien:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:3.1.2.a"
+
+\end_inset
+
+Netzteil liefert maximal 3 Ampere.
+ In diesem Fall wird das Netzteil dauerhaft kurzgeschlossen, bis der Endbenutzer
+ den Fehler bemerkt oder eine andere Sicherungseinrichtung greift.
+ Die Platine bleibt unbeschädigt.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:3.1.2.b"
+
+\end_inset
+
+Netzteil liefert mehr als 3 Ampere.
+ In diesem Fall wird das Netzteil dauerhaft kurzgeschlossen, bis der Endbenutzer
+ den Fehler bemerkt oder eine andere Sicherungseinrichtung greift.
+ Jedoch wurde die Diode dauerhaft überlastet und stellt einen dauerhaften
+ niederohmigen Kurzschluss dar.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Überspannung
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:3.2"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Test
+Eine Überspannung tritt ab einer Eingangsspannung von 28 Volt auf.
+ Je nach Höhe der Eingangsspannung gibt es hier 2 Fälle:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:3.2.1"
+
+\end_inset
+
+Eingangsspannung von unter 40 Volt.
+ In diesem Fall wird duch die Spannung der Eingangskondensator beschädigt.
+ Dieser wird nach kurzer Zeit das Elektrolyt entlüften und somit zu einem
+ niederohmigen Widerstand, der nun die Spannungsquelle kurzschließt.
+ Bis dies passiert, liegt am Step-Down Regler die Spannung an.
+ Dieser geht ab 29 Volt in die Abschaltung.
+ Jedoch wird er ab 35 Volt beschädigt, welches sich bei diesem Bauteil als
+ hochohmiger Fehler äußert.
+\end_layout
+
+\begin_layout Enumerate
+Eingangsspannung von über 40 Volt.
+ In diesem Fall wird die Diode leitend.
+ Und begrenzt die Spannung auf 40 Volt.
+ Die Beschädigungen aus Punkt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:3.2.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ gelten weiterhin.
+\end_layout
+
+\begin_layout Standard
+Ab diesem Punkt gelten die Unterszenarien aus 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:3.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ Unterpunkt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:3.1.2.a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ und 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:3.1.2.b"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, jedoch weiterhin mit den Beschädigungen des jeweiligen Unterpunktes.
 \end_layout
 
 \begin_layout Subsection
@@ -337,7 +582,19 @@ Test
 \end_layout
 
 \begin_layout Standard
-Test
+Ein Überstromereignis kann nur bei bei voheriger Beschädigung der Platine
+ oder bei einer Überspannung auftreten.
+ In diesem Fall greifen nur die Unterszenarien aus 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -345,7 +602,10 @@ Spannungszusammenbruch
 \end_layout
 
 \begin_layout Standard
-Test
+Sollte die Versorgungsspannung unter 7 Volt zusammenbrechen schaltet, sich
+ der Step-Down Regler ab und aktiviert sich erst nach Erreichen von 7 Volt
+ Eingangsspannung.
+ Die Platine bleibt unbeschädigt.
 \end_layout
 
 \begin_layout Standard
@@ -364,7 +624,15 @@ Verpolung
 \end_layout
 
 \begin_layout Standard
-Test
+Bei einer Verpolung des USB Anschlusses wird der P-Channel MOSFET von Drain
+ zu Source betrieben.
+ Daher ist dieser nicht leitend und es liegt keine Spannung an anderen Bauteilen
+ an, die diese beschädigen könnte.
+\end_layout
+
+\begin_layout Standard
+Wenn jedoch das Vier Gewinnt im Programmiermodus verpolt wird, kann der
+ USB Seriell Wandler beschädigt werden.
 \end_layout
 
 \begin_layout Subsection
@@ -372,7 +640,22 @@ Test
 \end_layout
 
 \begin_layout Standard
-Test
+Bei Überspannung sind zuerste die LEDs zu betrachten.
+ Da die Versorgung über USB ohne Regulierung direkt auf die 5 Volt Versorungssch
+iene der Platine geht, liegt jede Überspannung direkt an den LEDs an.
+ Diese sind spezifiziert auf einer Versorungsspannung von 5,3 Volt.
+ Über diese Spannung hinaus können diese beschädigt werden.
+ Jedoch ist nicht abzusehen, ob diese LEDs niederohmig oder hochohmig werden.
+\end_layout
+
+\begin_layout Standard
+Bis 18 Volt bleibt der Microcontroller jedoch geschützt, da dieser hinter
+ einer Regulierungsstufe hängt.
+\end_layout
+
+\begin_layout Standard
+Über 18 Volt hinaus ist die Platine mit hoher Wahrscheinlickeit komplett
+ zerstört.
 \end_layout
 
 \begin_layout Subsection
@@ -380,7 +663,14 @@ Test
 \end_layout
 
 \begin_layout Standard
-Test
+Ein Überstromereignis kann nur bei voheriger Beschädigung der Platine oder
+ bei einer Überspannung auftreten.
+ In diesem Fall würde die Platine den Strom nicht regulieren, da sich auf
+ die Sicherungsmaßnahmen des Netzteiles verlassen wird.
+ Die Platine verwednet den USB Battery Charging 1.2 Standard.
+ Daher sollte kein Netzteil der Platine mehr als 5 Volt bei 2 Ampere zur
+ Verfügung stellen und beim Überschreiten dieser Lesitungsdaten in die Sicherhei
+tsabschaltung gehen.
 \end_layout
 
 \begin_layout Subsection
@@ -388,7 +678,15 @@ Spannungszusammenbruch
 \end_layout
 
 \begin_layout Standard
-Test
+Bei Unterschreitung der Betriebsspannung bis zu 
+\begin_inset Formula $U\ge4$
+\end_inset
+
+ Volt ist die Funktion der Platine nicht eingeschränkt.
+ Ab Unterschreitung von 4 Volt wird der Mikrocontroller nicht mehr mit einer
+ ausreichenden Spannung versorgt und geht in Brown-Out-Reset.
+ Daher erkennt er selbstständig die zu niedrige Spannung und schaltet sich
+ deswegen sicherhaltshalber ab.
 \end_layout
 
 \begin_layout Standard
@@ -399,7 +697,15 @@ Test
 \end_layout
 
 \begin_layout Section
-Revisionverzeichnis
+Revisionsverzeichnis
+\end_layout
+
+\begin_layout Itemize
+01.03.2021 Erstveröffentlichung
+\end_layout
+
+\begin_layout Itemize
+02.03.2021 Kontrolliert von Linda Heinrich
 \end_layout
 
 \end_body
